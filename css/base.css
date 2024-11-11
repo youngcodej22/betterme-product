@@ -1,0 +1,187 @@
+@-webkit-keyframes imgSlideAni {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(-100%, 0px, 0px);
+    transform: translate3d(-100%, 0px, 0px);
+  }
+}
+@keyframes imgSlideAni {
+  from {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+  }
+  to {
+    -webkit-transform: translate3d(-100%, 0px, 0px);
+    transform: translate3d(-100%, 0px, 0px);
+  }
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/woff2/Pretendard-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/woff2/Pretendard-ExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/woff2/Pretendard-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/woff2/Pretendard-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/woff2/Pretendard-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/woff2/Pretendard-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/woff2/Pretendard-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/woff2/Pretendard-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../font/woff2/Pretendard-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "EuclidCircularA";
+  src: url("../font/woff2/EuclidCircularA-Light-WebS.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "EuclidCircularA";
+  src: url("../font/woff2/EuclidCircularA-Regular-WebS.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "EuclidCircularA";
+  src: url("../font/woff2/EuclidCircularA-Medium-WebS.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+}
+@font-face {
+  font-family: "EuclidCircularA";
+  src: url("../font/woff2/EuclidCircularA-Semibold-WebS.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+html,
+body,
+* {
+  font-family: "Pretendard", sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.screen-off {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 0 0, 0 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.reactive::after {
+  content: "";
+  display: block;
+}
+
+.reactive > .contents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media all and (min-width: 2000px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
+@media all and (min-width: 1500px) and (max-width: 1999px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+@media all and (min-width: 1400px) and (max-width: 1499px) {
+  html,
+  body {
+    font-size: 15px;
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1399px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 1023px) {
+  html,
+  body {
+    font-size: 0.833vw;
+  }
+}/*# sourceMappingURL=base.css.map */
