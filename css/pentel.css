@@ -86,7 +86,7 @@ video {
 
 body {
   position: relative;
-  font-family: YakuHanJP, ryo-gothic-plusn, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 500;
   font-style: normal;
   letter-spacing: 0.03em;
@@ -210,37 +210,37 @@ a:focus {
 }
 
 b {
-  font-family: YakuHanJP, ryo-gothic-plusn, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700;
 }
 
 .c_font-r {
-  font-family: YakuHanJP, ryo-gothic-plusn, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 400;
 }
 
 .c_font-b {
-  font-family: YakuHanJP, ryo-gothic-plusn, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700;
 }
 
 .c_font-n {
-  font-family: YakuHanJP, ryo-gothic-plusn, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 500;
 }
 
 .c_font-en {
-  font-family: paralucent, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700;
 }
 
 .c_font-en-h {
-  font-family: paralucent, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 900;
 }
 
 .c_font-en-h-str {
-  font-family: paralucent, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 900;
   font-size: 18px !important;
   letter-spacing: 0.01em !important;
@@ -1717,7 +1717,7 @@ a:hover .c_arrow-dl:before {
   overflow: hidden;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  font-family: paralucent, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700 !important;
 }
 .c_contents-fansvoice-list-voice:before {
@@ -3097,7 +3097,6 @@ body.js-fix-on {
 }
 .js-textrowmotion-single {
   line-height: 2;
-  font-weight: 300;
 }
 .js-textrowmotion-single .js-textrowmotion-row {
   display: inline-block;
@@ -4877,7 +4876,7 @@ body.js-notice-visible {
   overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  font-family: paralucent, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700;
 }
 
@@ -5073,7 +5072,7 @@ body.js-notice-visible {
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-family: paralucent, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700;
 }
 
@@ -7212,7 +7211,7 @@ body.js-notice-visible {
   overflow: hidden;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  font-family: paralucent, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700;
 }
 .s-top_contents-fansvoice-list-voice:before {
@@ -9761,7 +9760,7 @@ body.js-notice-visible {
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-family: paralucent, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700;
 }
 
@@ -12357,7 +12356,7 @@ h2 + .l-und_detail-article-slider {
   .l-und_detail-article-related-faq-block a p {
     margin: 0 0 0 18px;
     padding: 0;
-    font-family: paralucent, sans-serif;
+    font-family: "MinSans", "MinSansVF", sans-serif;
     font-weight: 700;
     display: -webkit-box;
     overflow: hidden;
@@ -14777,7 +14776,7 @@ h2 + .l-und_detail-article-slider {
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-family: paralucent, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700;
 }
 .s-products_sec-type3-slider-wrap .l-slider-col3-block .label {
@@ -15141,7 +15140,7 @@ h2 + .l-und_detail-article-slider {
   overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  font-family: paralucent, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700;
 }
 
@@ -15361,7 +15360,7 @@ h2 + .l-und_detail-article-slider {
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-family: paralucent, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700;
 }
 .s-products_list-new-slider-block .c_new,
@@ -15716,7 +15715,7 @@ h2 + .l-und_detail-article-slider {
   overflow: hidden;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  font-family: paralucent, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700;
   margin: 0;
 }
@@ -17690,7 +17689,7 @@ h2 + .l-und_detail-article-slider {
   overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  font-family: paralucent, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700;
 }
 
@@ -17937,7 +17936,7 @@ h2 + .l-und_detail-article-slider {
   overflow: hidden;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  font-family: paralucent, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700;
 }
 .s-magazine_list-text span {
@@ -18757,7 +18756,7 @@ h2 + .l-und_detail-article-slider {
   -webkit-appearance: none;
   appearance: none;
   background: none transparent;
-  font-family: YakuHanJP, ryo-gothic-plusn, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700;
   color: #212121;
   display: inline-block;
@@ -19657,7 +19656,7 @@ h2 + .l-und_detail-article-slider {
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
-  font-family: paralucent, sans-serif;
+  font-family: "MinSans", "MinSansVF", sans-serif;
   font-weight: 700;
 }
 
@@ -24635,7 +24634,6 @@ h2 + .l-und_detail-article-slider {
   overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
-  font-family: paralucent, sans-serif;
   font-weight: 700;
 }
 .s-news_list-text span {
