@@ -62,24 +62,9 @@ video {
   position: sticky;
   bottom: calc((100vh - 589px) / 2);
   box-sizing: border-box;
-  height: calc((100vh - 589px) / 2 + 50vh);
+  height: clamp(300px, 100vh, 589px);
 }
 
-@media screen and (min-width: 2561px) {
-  .videoclips__item {
-    height: calc((100vh - 589px) / 2 + 45vh);
-  }
-}
-@media screen and (min-width: 1921px) and (max-width: 2560px) {
-  .videoclips__item {
-    height: calc((100vh - 589px) / 2 + 65vh);
-  }
-}
-@media screen and (max-width: 1920px) {
-  .videoclips__item {
-    height: calc((100vh - 589px) / 2 + 80vh);
-  }
-}
 .videoclips__item--1 {
   z-index: 5;
 }
@@ -101,7 +86,7 @@ video {
 .videoclips__thumb {
   overflow: hidden;
   position: relative;
-  width: 331px;
+  width: clamp(200px, 18vw, 331px);
   margin: 0 auto;
   border-radius: 20px;
 }
@@ -182,9 +167,9 @@ video {
 .videoclips__pop .bg {
   position: absolute;
   width: 120%;
-  left: 0%;
-  top: 0%;
-  transform: translate(-10%, -20%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
   z-index: -1;
 }
 .videoclips__pop .bg svg {
@@ -206,18 +191,19 @@ video {
 @media screen and (min-width: 2561px) {
   .videoclips__pop .bg {
     width: 100%;
-    transform: translate(0%, -5%);
+    transform: translate(-50%, -50%) scale(1.2);
   }
 }
 @media screen and (min-width: 1921px) and (max-width: 2560px) {
   .videoclips__pop .bg {
     width: 110%;
-    transform: translate(-5%, -10%);
+    transform: translate(-50%, -50%) scale(1.1);
   }
 }
 @media screen and (max-width: 1920px) {
   .videoclips__pop .bg {
-    transform: translate(-10%, -3%);
+    width: 120%;
+    transform: translate(-50%, -50%) scale(0.9);
   }
 }
 

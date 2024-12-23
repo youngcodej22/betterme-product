@@ -194,28 +194,28 @@ video {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     // height: calc(100vh - (100vh - 589px) / 2 + 50vh);
-    height: calc((100vh - 589px) / 2 + 50vh);
+    height: clamp(300px, 100vh, 589px);
     // z-index: 30; 
 }
 
-@media screen and (min-width: 2561px) {
-    .videoclips__item {
-        // padding-top: calc((100vh - 589px) / 2 + 75vh);
-        height: calc((100vh - 589px) / 2 + 45vh);
-    }
-}
-@media screen and (min-width: 1921px) and (max-width: 2560px) {
-    .videoclips__item {
-        // padding-top: calc((100vh - 589px) / 2 + 75vh);
-        height: calc((100vh - 589px) / 2 + 65vh);
-    }
-}
-@media screen and (max-width: 1920px) { 
-    .videoclips__item {
-        // padding-top: calc((100vh - 589px) / 2 + 75vh);
-        height: calc((100vh - 589px) / 2 + 80vh);
-    }
-}
+// @media screen and (min-width: 2561px) {
+//     .videoclips__item {
+//         // padding-top: calc((100vh - 589px) / 2 + 75vh);
+//         height: calc((100vh - 589px) / 2 + 45vh);
+//     }
+// }
+// @media screen and (min-width: 1921px) and (max-width: 2560px) {
+//     .videoclips__item {
+//         // padding-top: calc((100vh - 589px) / 2 + 75vh);
+//         height: calc((100vh - 589px) / 2 + 65vh);
+//     }
+// }
+// @media screen and (max-width: 1920px) { 
+//     .videoclips__item {
+//         // padding-top: calc((100vh - 589px) / 2 + 75vh);
+//         height: calc((100vh - 589px) / 2 + 80vh);
+//     }
+// }
 
 .videoclips__item--1 {
     z-index: 5;
@@ -266,7 +266,8 @@ video {
 .videoclips__thumb {
     overflow: hidden;
     position: relative;
-    width: 331px;
+    // width: 331px;
+    width: clamp(200px, 18vw, 331px); // 최소 250px, 최대 331px, 화면 너비의 20%
     margin: 0 auto;
     border-radius: 20px;
 }
@@ -440,11 +441,13 @@ video {
         position: absolute;
         width: 120%;
         // width: 100%;
-        left: 0%;
-        // top: 50%;
-        top: 0%;
+        // top: 0%;
+        // left: 0%;
+        top: 50%;
+        left: 50%;
         // transform: translate(-10%, -50%);
-        transform: translate(-10%, -20%);
+        // transform: translate(-10%, -20%);
+        transform: translate(-50%, -50%) scale(0.9);
         z-index: -1;
 
         svg {
@@ -471,21 +474,39 @@ video {
         }
     }
 
+    // @media screen and (min-width: 2561px) {
+    //     .bg {
+    //         width: 100%;
+    //         transform: translate(0%, -5%);
+    //     }
+    // }
+    // @media screen and (min-width: 1921px) and (max-width: 2560px) {
+    //     .bg {
+    //         width: 110%;
+    //         transform: translate(-5%, -10%);
+    //     }
+    // }
+    // @media screen and (max-width: 1920px) { 
+    //     .bg {
+    //         transform: translate(-10%, -3%);
+    //     }
+    // }
     @media screen and (min-width: 2561px) {
         .bg {
             width: 100%;
-            transform: translate(0%, -5%);
+            transform: translate(-50%, -50%) scale(1.2); // 크기 조정
         }
     }
     @media screen and (min-width: 1921px) and (max-width: 2560px) {
         .bg {
             width: 110%;
-            transform: translate(-5%, -10%);
+            transform: translate(-50%, -50%) scale(1.1); // 크기 조정
         }
     }
     @media screen and (max-width: 1920px) { 
         .bg {
-            transform: translate(-10%, -3%);
+            width: 120%;
+            transform: translate(-50%, -50%) scale(0.9);
         }
     }
 
