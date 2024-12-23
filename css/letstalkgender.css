@@ -103,7 +103,7 @@ video {
 
 .videoclips__thumb--3,
 .videoclips__thumb--6 {
-  transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 0px, 0);
 }
 
 .videoclips__thumbA {
