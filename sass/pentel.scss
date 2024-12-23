@@ -235,7 +235,8 @@ b {
 .c_font-r {
     // font-family: YakuHanJP, ryo-gothic-plusn, sans-serif;
     font-family: 'MinSans', 'MinSansVF', sans-serif;
-    font-weight: 400;
+    // font-weight: 400;
+    font-weight: 600;
 }
 
 .c_font-b {
@@ -8008,7 +8009,8 @@ body {
             padding: 1.7857142857% 2.6785714286%;
             background-color: #fff;
             width: 22.4330357143%;
-            min-width: 25.125rem;
+            // min-width: 25.125rem;
+            min-width: 22.125rem;
             // min-height: 600px;
             -webkit-box-flex: 0;
             -ms-flex-positive: 0;

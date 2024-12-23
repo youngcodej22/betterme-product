@@ -216,7 +216,7 @@ b {
 
 .c_font-r {
   font-family: "MinSans", "MinSansVF", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .c_font-b {
@@ -5645,7 +5645,7 @@ body.js-notice-visible {
   padding: 1.7857142857% 2.6785714286%;
   background-color: #fff;
   width: 22.4330357143%;
-  min-width: 25.125rem;
+  min-width: 22.125rem;
   flex-grow: 0;
   box-shadow: 0px 2.85893px 80px rgba(46, 24, 108, 0.08), 0px 2.85893px 60px rgba(58, 29, 119, 0.05), 0px 2.85893px 11.4357px rgba(100, 39, 115, 0.05);
   border-radius: 20px;
