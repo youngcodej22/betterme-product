@@ -26,7 +26,7 @@ function showPlanInfo(planId) {
     const allInfoWraps = document.querySelectorAll(
         `${activeContainer} .plan-detail-info-wrap`
     );
-    console.log("🚀 ~ showPlanInfo ~ allInfoWraps:", allInfoWraps);
+    // console.log("🚀 ~ showPlanInfo ~ allInfoWraps:", allInfoWraps);
 
     // Hide all first
     allInfoWraps.forEach((wrap) => {
@@ -40,6 +40,9 @@ function showPlanInfo(planId) {
     if (selectedInfo) {
         selectedInfo.classList.add("active");
     }
+
+    // Update button states
+    updateButtonStates(planId, activeContainer);
 }
 
 // Add click event listeners
@@ -59,6 +62,39 @@ function showPlanInfo(planId) {
 //     e.preventDefault();
 //     showPlanInfo("premium-info");
 // });
+
+function updateButtonStates(planId, activeContainer) {
+    // Remove active class from all buttons
+    const allButtons = document.querySelectorAll(
+        `${activeContainer} button[class^="btn-"]`
+    );
+    allButtons.forEach((btn) => {
+        btn.classList.remove("active");
+    });
+
+    // Add active class to the corresponding button
+    let buttonClass;
+    switch (planId) {
+        case "online-counseling-info":
+            buttonClass = "btn-online-counseling";
+            break;
+        case "standard-info":
+            buttonClass = "btn-standard";
+            break;
+        case "premium-info":
+            buttonClass = "btn-premium";
+            break;
+    }
+
+    if (buttonClass) {
+        const activeButton = document.querySelector(
+            `${activeContainer} .${buttonClass}`
+        );
+        if (activeButton) {
+            activeButton.classList.add("active");
+        }
+    }
+}
 
 // Show online counseling info by default
 document.addEventListener("DOMContentLoaded", function () {

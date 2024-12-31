@@ -445,7 +445,8 @@ $(() => {
     const spreadCardOb = new IntersectionObserver(
         (entries) => {
             // Check if screen width is greater than 720px
-            const mediaQuery = window.matchMedia('(min-width: 720px)');
+            // const mediaQuery = window.matchMedia('(min-width: 720px)');
+            const mediaQuery = window.matchMedia('(min-width: 100px)');
             
             const handleIntersection = (entries) => {
                 for (const entry of entries) {

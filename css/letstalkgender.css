@@ -4,6 +4,12 @@
   padding-bottom: 6.5625%;
 }
 
+@media only screen and (max-width: 760px) {
+  .section--2 {
+    padding-top: 8.5625%;
+    padding-bottom: 10.5625%;
+  }
+}
 .section__content {
   position: relative;
   background-position: top center;
@@ -18,7 +24,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 60px;
 }
 .section__content--2 .s-top_contents-02-ttl .middle-text-color .js-textrowmotion-row .js-textrowmotion-wrapper:nth-child(5) .js-textrowmotion-txt {
   color: #7a42ff;
@@ -36,10 +41,12 @@
   color: #7a42ff;
 }
 .section__content--2 .s-top_contents-02-ttl .en {
+  font-size: 1.3em;
   color: #c9c6c6;
 }
 @media only screen and (max-width: 760px) {
   .section__content--2 .s-top_contents-02-ttl {
+    margin-top: 22px;
     margin-bottom: 22px;
   }
   .section__content--2 .s-top_contents-02-ttl .text {
@@ -48,14 +55,19 @@
 }
 @media only screen and (max-width: 760px) {
   .section__content--2 .s-top_contents-02-ttl .en {
-    margin-bottom: -3px;
-    font-size: 2em !important;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem !important;
   }
 }
 
 video {
   display: block;
   width: 100%;
+}
+
+.videoclips {
+  padding-top: 10vh;
 }
 
 .videoclips__item {
@@ -216,6 +228,23 @@ video {
   left: 0;
   right: 0;
   bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.videoModal.fade-in {
+  opacity: 1;
+}
+.videoModal:before {
+  content: " ";
+  display: block;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.4;
 }
 
 .videoModal:before {
@@ -283,15 +312,17 @@ video {
 .videoModal__clips {
   z-index: 1;
   overflow: hidden;
-  position: relative;
+  position: fixed;
   height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .videoModal__clips:before,
 .videoModal__clips:after {
   content: " ";
   display: block;
-  position: absolute;
   left: 0;
   right: 0;
   width: 0;
@@ -304,6 +335,8 @@ video {
   transition: transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transform-origin: top center;
   transform: scaleY(0);
+  position: fixed;
+  pointer-events: none;
 }
 
 .videoModal__clips:before {
@@ -395,9 +428,13 @@ video {
   .section__content--2 {
     padding-bottom: 17.6666666667vw;
   }
+  .videoclips {
+    padding-top: clamp(20px, 7vh, 60px);
+  }
   .videoclips__item {
+    bottom: calc((100vh - 146.6666666667vw) / 2);
     bottom: calc((100lvh - 146.6666666667vw) / 2);
-    height: calc((100vh - 589px) / 2 + 45vh);
+    height: clamp(300px, 50vh, 589px);
   }
   .videoclips__item--6 {
     overflow: visible;
