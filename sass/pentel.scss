@@ -6308,8 +6308,12 @@ body {
 
 @media only screen and (max-width: 760px) {
     .s-top_contents-01 {
-        padding: 24.154589372vw 0 0 0;
-        margin-bottom: clamp(0px, 20.5307917889vw, 130px);
+        overflow: hidden;
+        // padding: 24.154589372vw 0 0 0;
+        padding: 24.154589372vw 0 clamp(0px, 20.5307917889vw, 130px) 0;
+        // margin-bottom: clamp(0px, 20.5307917889vw, 130px);
+        margin-bottom: 0px;
+        // padding-bottom: clamp(0px, 20.5307917889vw, 130px);
     }
 }
 
@@ -6353,7 +6357,8 @@ body {
         left: -10px;
         z-index: -1;
         opacity: 0.4;
-        bottom: -3vh;
+        // bottom: -3vh;
+        bottom: 7vh;
     }
 }
 
@@ -6380,7 +6385,8 @@ body {
     .s-top_contents-01-fig--03 {
         width: 11.363636vw;
         max-width: 216px;
-        bottom: -6vh;
+        // bottom: -6vh;
+        bottom: 5vh;
         left: 25.9090909091vw;
         z-index: -1;
         opacity: 0.4;
@@ -6388,7 +6394,10 @@ body {
     .s-top_contents-01-fig--04 {
         width: 11.363636vw;
         max-width: 216px;
-        top: 13vh;
+        // top: 13vh;
+        // top: 4vh;
+        top: 12vh;
+        bottom: auto;
         right: 28.9090909091vw;
         z-index: -1;
         opacity: 0.4;
@@ -6558,7 +6567,7 @@ body {
     }
 
     .s-top_contents-01-01-ttl {
-        font-size: 11px;
+        font-size: 13.5px;
         line-height: 2.43;
         letter-spacing: 0.03em;
         margin-bottom: 34px;
@@ -7863,6 +7872,7 @@ body {
     }
 
     .plan-wrap {
+        position: relative; // for input#planSwitch 
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -7884,6 +7894,7 @@ body {
 
         .screen-off {
             position: absolute;
+            top: 0; // prevent scroll event when it click input
             width: 1px;
             height: 1px;
             margin: -1px;
@@ -8699,230 +8710,241 @@ body {
                 }
             }
 
-            .plan-detail-wrap {
-                flex-direction: column;
+            .plan-detail-container.mobile {
+                .plan-detail-wrap {
+                    flex-direction: column;
 
-                .plan-detail-box {
-                    margin-bottom: 50px;
+                    .plan-detail-box {
+                        margin-bottom: 50px;
 
-                    .plan-detail {
-                        width: 100%;
-                        min-width: auto;
-                        padding: 8%;
+                        .plan-detail {
+                            width: 100%;
+                            min-width: auto;
+                            padding: 8%;
 
-                        &.standard, &.enterprise {
+                            &.standard, &.enterprise {
+
+                                .plan-name {
+
+                                }
+                            }
 
                             .plan-name {
 
                             }
-                        }
 
-                        .plan-name {
+                            .plan-price {
 
-                        }
+                                .price-switch-container {
 
-                        .plan-price {
+                                    .price-switch-wrap {
 
-                            .price-switch-container {
+                                    }
 
-                                .price-switch-wrap {
-
+                                    span {
+                                        
+                                    }
                                 }
 
-                                span {
+                                .dc-info {
+
+                                    .fixed-price {
+
+                                    }
+
+                                    .dc-rate {
+                                        
+                                    }
+                                }
+
+                                .vat-info {
                                     
                                 }
                             }
 
-                            .dc-info {
+                            .plan-label {
+                                font-size: 0.75em;
 
-                                .fixed-price {
-
+                                .label {
+                                    padding: 0.4rem 0.7rem;
                                 }
-
-                                .dc-rate {
-                                    
-                                }
-                            }
-
-                            .vat-info {
                                 
+                                .plus-icon {
+                                }
+                            }
+
+                            &.standard {
+                                .plan-label {
+                                }
+                            }
+                        
+                            p.information {
+
+                            }
+
+                            button[class^="btn"] {
+                                line-height: 2.8rem;
+
+                                // &:hover {
+                                //     pointer-events: none;
+                                // }
+
+                                &.btn-start-free {
+
+                                    .arrow-icon {
+
+                                        svg {
+
+                                        }
+                                        
+                                        svg path {
+
+                                        }
+                                    }
+
+                                    &:hover {
+                                        
+                                    }
+
+                                    &:active {
+
+                                    }
+                                }
+
+                                &.btn-inquiry {
+
+                                    .arrow-icon {
+
+                                        svg {
+
+                                        }
+                                        
+                                        svg path {
+
+                                        }
+                                    }
+
+                                    &:hover {
+
+                                    }
+
+                                    &:active {
+
+                                    }
+                                }
                             }
                         }
 
-                        .plan-label {
-                            font-size: 0.5em;
+                        .plan-detail-info-wrap {
+                            display: flex;
+                            flex-direction: column;
+                            // ---
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: opacity 0.3s linear, visibility 0.3s linear;
+                            // position: absolute;
+                            // top: auto;
+                            // left: auto;
+                            width: 100%;
 
-                            .label {
-                                padding: 0.4rem 0.7rem;
+                            .plan-detail-info-inner-guide {
+                                flex-direction: column;
+                                padding: 0% 1%;
                             }
                             
-                            .plus-icon {
+                            .plan-detail-info-guide.left {
+                                padding: 8% 4% 4%;
+
+                                img {
+                                    margin-bottom: 6px;
+                                }
+                                h3 {
+                                    font-size: 1.4em;
+                                    line-height: 1.4;
+                                }
                             }
-                        }
+                            .plan-detail-info-guide.right {
 
-                        &.standard {
-                            .plan-label {
-                            }
-                        }
-                    
-                        p.information {
-
-                        }
-
-                        button[class^="btn"] {
-                            line-height: 2.8rem;
-
-                            // &:hover {
-                            //     pointer-events: none;
-                            // }
-
-                            &.btn-start-free {
-
-                                .arrow-icon {
-
+                                .check {
+                                    gap: 20px;
+                                    
                                     svg {
+                                        flex-shrink: 0;
 
+                                        path {
+                                        
+                                        }
+
+                                        circle {
+                                        
+                                        }
                                     }
-                                    
-                                    svg path {
 
+                                    p {
+                                        font-size: 0.8em;
                                     }
-                                }
-
-                                &:hover {
-                                    
-                                }
-
-                                &:active {
-
                                 }
                             }
 
-                            &.btn-inquiry {
+                            .plan-detail-info-inner-intro {
+                                margin-top: 1.5em;
+                                padding: 4% 8%;
 
-                                .arrow-icon {
-
-                                    svg {
-
-                                    }
-                                    
-                                    svg path {
-
-                                    }
+                                h4 {    
+                                    font-size: 1.4em;
+                                    padding-bottom: 0.3em;
                                 }
 
-                                &:hover {
-
-                                }
-
-                                &:active {
-
-                                }
-                            }
-                        }
-                    }
-
-                    .plan-detail-info-wrap {
-                        display: flex;
-                        flex-direction: column;
-
-                        .plan-detail-info-inner-guide {
-                            flex-direction: column;
-                            padding: 0% 1%;
-                        }
-                        
-                        .plan-detail-info-guide.left {
-                            padding: 8% 4% 4%;
-
-                            img {
-                                margin-bottom: 6px;
-                            }
-                            h3 {
-                                font-size: 1.4em;
-                                line-height: 1.4;
-                            }
-                        }
-                        .plan-detail-info-guide.right {
-                        
-
-                            .check {
-                                gap: 20px;
-                                
-                                svg {
-                                    flex-shrink: 0;
-
-                                    path {
-                                    
-                                    }
-
-                                    circle {
-                                    
-                                    }
-                                }
-
-                                p {
-                                    font-size: 0.8em;
-                                }
-                            }
-                        }
-
-                        .plan-detail-info-inner-intro {
-                            margin-top: 1.5em;
-                            padding: 4% 8%;
-
-                            h4 {    
-                                font-size: 1.4em;
-                                padding-bottom: 0.3em;
-                            }
-
-                            .plan-detail-info-intro-items {
-                                gap: 1em;
-
-                                .item-wrap {
-                                    flex-direction: column;
+                                .plan-detail-info-intro-items {
                                     gap: 1em;
 
-                                    .check {
-                                        width: 100%;
-                                        
-                                        svg {
-                                        
-                    
-                                            path {
+                                    .item-wrap {
+                                        flex-direction: column;
+                                        gap: 1em;
+
+                                        .check {
+                                            width: 100%;
                                             
-                                            }
-                    
-                                            circle {
+                                            svg {
+                                            
+                        
+                                                path {
                                                 
+                                                }
+                        
+                                                circle {
+                                                    
+                                                }
                                             }
-                                        }
 
-                                        .item-text {
-                                            font-size: 0.8em;
+                                            .item-text {
+                                                font-size: 0.8em;
 
-                                            .item-text-sub {
-                                                left: 0%;
+                                                .item-text-sub {
+                                                    left: 0%;
+                                                }
                                             }
+                                            span {
+                                                bottom: auto;
+                                                // left: 12%;
+                                                top: 50%;
+                                                font-size: 0.6em;
+                                                transform: translateY(50%);
+                                            }
+                        
                                         }
-                                        span {
-                                            bottom: auto;
-                                            // left: 12%;
-                                            top: 50%;
-                                            font-size: 0.6em;
-                                            transform: translateY(50%);
-                                        }
-                    
                                     }
                                 }
                             }
                         }
+                        .plan-detail-info-wrap.active {
+                            opacity: 1;
+                            visibility: visible;
+                            // position: static;
+                        }
                     }
-                    .plan-detail-info-wrap.active {
                     
-                    }
                 }
-                
             }
         }
 
@@ -9841,6 +9863,24 @@ body {
 
                     .reactive {
                         position: absolute;
+
+                        &:nth-child(1) {
+                            transform: rotate(-24deg) translate(-40%, -5%);
+                        }
+                        &:nth-child(2) {
+                            transform: rotate(-13deg) translate(-20%, -5%);
+                        }
+                        &:nth-child(3) {
+                            z-index: 8;
+                        }
+                        &:nth-child(4) {
+                            transform: rotate(13deg) translate(30%, 0%);
+                            z-index: 9;
+                        }
+                        &:nth-child(5) {
+                            transform: rotate(25deg) translate(50%, -3%);
+                            z-index: 10;
+                        }
 
                         .contents {
                             span {
@@ -11421,6 +11461,12 @@ body {
         margin-top: 17px;
     }
 }
+.l-footer .footer-pc {
+    display: block;
+}
+.l-footer .footer-mobile {
+    display: none;
+}
 
 @media only screen and (max-width: 760px) {
     .l-footer footer {
@@ -11430,6 +11476,12 @@ body {
         .company-info {
             font-size: 10px;
         }
+    }
+    .l-footer .footer-pc {
+        display: none;
+    }
+    .l-footer .footer-mobile {
+        display: block;
     }
 }
 
@@ -11720,7 +11772,8 @@ body {
                     background-color: #353535;
                     // border-radius: 48px;
                     border-radius: 24px;
-                    min-height: clamp(300px, 50vh, 499px);
+                    // min-height: clamp(300px, 50vh, 499px);
+                    min-height: clamp(300px, 66.5vh, 499px);
 
                     .left-step-text-container {
                         width: 50%;
@@ -11801,7 +11854,8 @@ body {
                     border-radius: 24px;
                     overflow: hidden;
                     box-sizing: border-box;
-                    min-height: clamp(300px, 50vh, 499px);
+                    // min-height: clamp(300px, 50vh, 499px);
+                    min-height: clamp(300px, 66.5vh, 499px);
 
                     .right-step-text-container {
                         display: flex;
@@ -11866,7 +11920,8 @@ body {
                     // border-radius: 48px;
                     border-radius: 24px;
                     // min-height: 499px;
-                    min-height: clamp(300px, 50vh, 499px);
+                    // min-height: clamp(300px, 50vh, 499px);
+                    min-height: clamp(300px, 66.5vh, 499px);
 
                     .center-step-text-container {
                         width: 60%;
@@ -12195,6 +12250,7 @@ body {
                         margin: 0;
                         padding: 4em 0 2em 2em;
                         justify-content: flex-start;
+                        min-height: clamp(300px, 50vh, 499px);
     
                         .left-step-text-container {
                             width: 80%;
@@ -12236,6 +12292,7 @@ body {
                         // padding: 4em 0 2em;
                         padding: 4em 0 2em 2em;
                         justify-content: flex-start;
+                        min-height: clamp(300px, 50vh, 499px);
 
                         .center-step-text-container {
                             width: 90%;
