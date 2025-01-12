@@ -1,17 +1,3 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//     window.addEventListener('scroll', function() {
-//         // Your scroll event handling code here
-//         const textPath = document.getElementById('section21Wave-textpath');
-//         const scrollPosition = window.scrollY;
-//         console.log("🚀 ~ window.addEventListener ~ scrollPosition:", scrollPosition);
-        
-    
-//         // Example of moving the textPath based on scroll position
-//         textPath.setAttribute('startOffset', scrollPosition % 100 + '%');
-//     });
-        
-// });
-
 document.addEventListener("DOMContentLoaded", () => {
     const bg = document.querySelector(".bg");
     const textPath = document.getElementById("section21Wave-textpath");
@@ -64,36 +50,3 @@ document.addEventListener("DOMContentLoaded", () => {
         return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
     }
 });
-
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     window.addEventListener('scroll', function() {
-//         const textPath = document.getElementById('section21Wave-textpath');
-//         const scrollPosition = window.scrollY;
-//         const maxScroll = document.body.scrollHeight - window.innerHeight;
-//         const scrollPercent = (scrollPosition / maxScroll) * 100;
-
-//         // Apply a faster easing function for smoother transition
-//         const easedScrollPercent = easeInOutQuad(scrollPercent / 100) * 350; // Increase the multiplier for faster effect
-
-//         // Set the startOffset based on the eased scroll percentage
-//         textPath.setAttribute('startOffset', easedScrollPercent + '%');
-//     });
-
-//     // Easing function for smooth transition
-//     function easeInOutQuad(t) {
-//         return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
-//     }
-// });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     window.addEventListener('scroll', function() {
-//         const textPath = document.getElementById('section21Wave-textpath');
-//         const scrollPosition = window.scrollY;
-//         const maxScroll = document.body.scrollHeight - window.innerHeight;
-//         const scrollPercent = (scrollPosition / maxScroll) * 150; // Increase the multiplier for faster effect
-
-//         // Set the startOffset based on the scroll percentage
-//         textPath.setAttribute('startOffset', scrollPercent + '%');
-//     });
-// });

@@ -26,87 +26,6 @@ $(() => {
         // if( )
     }, 1000);
 
-    // [디스플레이] 구글 플레이 버튼 클릭 시
-    // $(".btn-app-link").on("click", function () {
-    //     mixpanel.track("click_googlePlayBtn_main", {
-    //         "click_googlePlayBtn_main Type": "Referral",
-    //     });
-    // });
-
-    // //플랜 문의하기 버튼 클릭 시
-    // $(".btn-inquiry").on("click", function () {
-    //     mixpanel.track("click_planInquiryBtn_main", {
-    //         "click_planInquiryBtn_main Type": "Referral",
-    //     });
-    // });
-    // //첫번째 질문 선택 시
-    // $("#question1").on("click", function () {
-    //     mixpanel.track("click_firstFaq_main", {
-    //         "click_firstFaq_main Type": "Referral",
-    //     });
-    // });
-    // //두번째 질문 선택 시
-    // $("#question2").on("click", function () {
-    //     mixpanel.track("click_secondFaq_main", {
-    //         "click_secondFaq_main Type": "Referral",
-    //     });
-    // });
-
-    // //세번째 질문 선택 시
-    // $("#question3").on("click", function () {
-    //     mixpanel.track("click_thirdFaq_main", {
-    //         "click_thirdFaq_main Type": "Referral",
-    //     });
-    // });
-
-    // //네번째 질문 선택 시
-    // $("#question4").on("click", function () {
-    //     mixpanel.track("click_fourthFaq_main", {
-    //         "click_fourthFaq_main Type": "Referral",
-    //     });
-    // });
-
-    // //다섯번째 질문 선택 시
-    // $("#question5").on("click", function () {
-    //     mixpanel.track("click_fifthFaq_main", {
-    //         "click_fifthFaq_main Type": "Referral",
-    //     });
-    // });
-
-    // //여섯번째 질문 선택 시
-    // $("#question6").on("click", function () {
-    //     mixpanel.track("click_sixthFaq_main", {
-    //         "click_sixthFaq_main Type": "Referral",
-    //     });
-    // });
-
-    // //일곱번째 질문 선택 시
-    // $("#question7").on("click", function () {
-    //     mixpanel.track("click_seventhFaq_main", {
-    //         "click_seventhFaq_main Type": "Referral",
-    //     });
-    // });
-
-    // //여덟번째 질문 선택 시
-    // $("#question8").on("click", function () {
-    //     mixpanel.track("click_eightFaq_main", {
-    //         "click_eightFaq_main Type": "Referral",
-    //     });
-    // });
-
-    // // 사용해보기 버튼 클릭 시
-    // $(".btn-start").on("click", function () {
-    //     mixpanel.track("click_tryBtn_main", {
-    //         "click_tryBtn_main Type": "Referral",
-    //     });
-    // });
-    // // 바로시작하기 버튼 클릭 시
-    // $(".btn-start-now").on("click", function () {
-    //     mixpanel.track("click_startBtn_main", {
-    //         "click_startBtn_main Type": "Referral",
-    //     });
-    // });
-
     const hash = window.location.hash;
     if (hash) {
         const scrollTop = $(window).scrollTop();
@@ -313,106 +232,13 @@ $(() => {
         });
     }, 10);
 
-    // const stepCardAnimation = _.throttle(() => {
-    //     const scrollTop = $("html").scrollTop();
-    //     const maxScrollTop =
-    //         scrollTop - $(".step-card-list").offset().top + $(".gnb").height();
-    //     const opacityValue =
-    //         maxScrollTop / ($(".step-card-list li:nth-child(2)").outerHeight() / 2);
-    //     if (opacityValue <= 1) {
-    //         $(".step-card-list li")
-    //             .eq(1)
-    //             .children("div")
-    //             .not(".step-num")
-    //             .css("opacity", opacityValue);
-    //         $(".step-card-list li")
-    //             .eq(2)
-    //             .children("div")
-    //             .not(".step-num")
-    //             .css("opacity", 0);
-    //     } else if (opacityValue <= 2) {
-    //         $(".step-card-list li")
-    //             .eq(2)
-    //             .children("div")
-    //             .not(".step-num")
-    //             .css("opacity", opacityValue - 1);
-    //         $(".step-card-list li")
-    //             .eq(3)
-    //             .children("div")
-    //             .not(".step-num")
-    //             .css("opacity", 0);
-    //     } else {
-    //         // $(".step-card-list li")
-    //         //     .eq(2)
-    //         //     .children("div")
-    //         //     .not(".step-num")
-    //         //     .css("opacity", opacityValue - 1.3);
-    //         $(".step-card-list li")
-    //             .eq(3)
-    //             .children("div")
-    //             .not(".step-num")
-    //             .css("opacity", opacityValue - 2);
-    //     }
-    // }, 10);
     const stepCardAnimation = _.throttle(() => {
         const scrollTop = $("html").scrollTop();
-        // const maxScrollTop =
-        //     scrollTop -
-        //     $(".step-card-list").offset().top +
-        //     $(".gnb").height();
-        // // const cardHeight =
-        // //     $(".step-card-list li:nth-child(2)").outerHeight() / 2;
-        // const cardHeight =
-        //     $(".step-card-list li:nth-child(3)").outerHeight() / 3;
-        // const opacityValue = maxScrollTop / cardHeight;
-        // console.log("*opacityValue*:", opacityValue);
 
         $(".step-card-list li")
             .children("div")
             .not(".step-num")
             .css("opacity", 1);
-
-        // if (opacityValue <= 1) {
-        //     $(".step-card-list li")
-        //         .eq(1)
-        //         .children("div")
-        //         .not(".step-num")
-        //         .css("opacity", opacityValue);
-        //     $(".step-card-list li")
-        //         .eq(2)
-        //         .children("div")
-        //         .not(".step-num")
-        //         .css("opacity", opacityValue);
-        // } else if (opacityValue <= 1.5) {
-        //     $(".step-card-list li")
-        //         .eq(2)
-        //         .children("div")
-        //         .not(".step-num")
-        //         .css("opacity", opacityValue);
-        //     $(".step-card-list li")
-        //         .eq(3)
-        //         .children("div")
-        //         .not(".step-num")
-        //         .css("opacity", opacityValue);
-        // } else if (opacityValue <= 2.5) {
-        //     $(".step-card-list li")
-        //         .eq(3)
-        //         .children("div")
-        //         .not(".step-num")
-        //         .css("opacity", opacityValue);
-        //     $(".step-card-list li")
-        //         .eq(4)
-        //         .children("div")
-        //         .not(".step-num")
-        //         .css("opacity", opacityValue);
-        // } else {
-        //     $(".step-card-list li")
-        //         .eq(4)
-        //         .children("div")
-        //         .not(".step-num")
-        //         .css("opacity", opacityValue);
-        //     // .css("opacity", opacityValue - 3);
-        // }
     }, 10);
 
     const scrollOb = new IntersectionObserver((entries) => {
@@ -444,9 +270,9 @@ $(() => {
 
     const spreadCardOb = new IntersectionObserver(
         (entries) => {
-            // Check if screen width is greater than 720px
-            // const mediaQuery = window.matchMedia('(min-width: 720px)');
-            const mediaQuery = window.matchMedia('(min-width: 100px)');
+            // Check if screen width is greater than 760px
+            const mediaQuery = window.matchMedia('(min-width: 760px)');
+            // const mediaQuery = window.matchMedia('(min-width: 100px)');
             
             const handleIntersection = (entries) => {
                 for (const entry of entries) {
@@ -550,13 +376,6 @@ $(() => {
 
 
     // * excute
-    // scrollOb.observe(document.querySelector(".card.intro"));
-    // scrollOb.observe(document.querySelector(".card.mobile"));
-    // scrollOb.observe(document.querySelector(".step-card-list"));
-    // scrollOb.observe(document.querySelector(".hover-card-container"));
-    // spreadCardOb.observe(document.querySelector(".card-list"));
-    // chatListOb.observe(document.querySelector(".chat-list"));
-
     const introCard = document.querySelector(".card.intro");
     const mobileCard = document.querySelector(".card.mobile");
     const stepCardList = document.querySelector(".step-card-list");

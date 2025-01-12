@@ -1,0 +1,1163 @@
+// .section {
+    // background-position: top center;
+    // -webkit-background-size: 100px 100px;
+    // -moz-background-size: 100px 100px;
+    // background-size: 100px 100px;
+    // padding-top: 1.5625%;
+    // padding-bottom: 8.5625%;
+// }
+
+.section--2 {
+    padding-top: 1.5625%;
+    padding-bottom: 6.5625%;
+    // background-image: url(//letstalkgender.jp/../../cms/wp-content/themes/templatename/assets/images/bg_1.png)
+}
+@media only screen and (max-width: 1280px) {
+    .section--2 {
+        padding-top: 6.5625%;
+        padding-bottom: 0%;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .section--2 {
+        padding-top: 8.5625%;
+        padding-bottom: 10.5625%;
+    }
+}
+
+.section__content {
+    position: relative;
+    background-position: top center;
+    -webkit-background-size: 100px 100px;
+    -moz-background-size: 100px 100px;
+    background-size: 100px 100px;
+    -webkit-transition: opacity 640ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    -moz-transition: opacity 640ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: opacity 640ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    -ms-transition: opacity 640ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: opacity 640ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    // opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+.section__content--2 {
+    // margin-top: 14.0625%;
+    // padding-top: 41.40625%;
+    // padding-bottom: 7.8125%;
+    // background-image: url(//letstalkgender.jp/../../cms/wp-content/themes/templatename/assets/images/bg_2.png);
+    // overflow: hidden;
+    // height: 100vh;
+    // background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(233,225,255,1) 35%, rgba(236,230,255,1) 50%, rgba(233,225,255,1) 65%, rgba(255,255,255,1) 100%);
+    // position: relative;
+
+    // background-size: auto, 100px 100px;
+    // background-position: center, top center;
+    
+    // ! 고민
+    // background-size: auto;
+    // background-repeat: repeat;
+    // background-image: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(233,225,255,1) 35%, rgba(236,230,255,1) 50%, rgba(233,225,255,1) 65%, rgba(255,255,255,1) 100%), url(../images/footer/logo.png);
+    // // background-blend-mode: multiply;
+    // background-blend-mode: color;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(233,225,255,1) 35%, rgba(236,230,255,1) 50%, rgba(233,225,255,1) 65%, rgba(255,255,255,1) 100%);
+
+    .s-top_contents-02-ttl {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // margin-bottom: 60px;
+    
+        .middle-text-color {
+            .js-textrowmotion-row {
+                .js-textrowmotion-wrapper:nth-child(5) {
+                    .js-textrowmotion-txt {
+                        color: #7a42ff;
+                    }
+                }
+                .js-textrowmotion-wrapper:nth-child(6) {
+                    .js-textrowmotion-txt {
+                        color: #7a42ff;
+                    }
+                }
+                .js-textrowmotion-wrapper:nth-child(7) {
+                    .js-textrowmotion-txt {
+                        color: #7a42ff;
+                    }
+                }
+                .js-textrowmotion-wrapper:nth-child(8) {
+                    .js-textrowmotion-txt {
+                        color: #7a42ff;
+                    }
+                }
+                .js-textrowmotion-wrapper:nth-child(9) {
+                    .js-textrowmotion-txt {
+                        color: #7a42ff;
+                    }
+                }
+            }
+        }
+
+        .en {  
+            font-size: 1.3em;
+            color: #c9c6c6;
+        }
+    }
+    
+    // &::after {
+    //     content: 'BETTERME';
+    //     position: absolute;
+    //     top: 30%;
+    //     left: 50%;
+    //     // right: 0;
+    //     // bottom: 0;
+    //     transform: translate(-50%, -30%);
+    //     // width: 100%;
+    //     // height: 100%;
+    //     font-size: 200px;
+    //     z-index: 1;
+    //     // background: linear-gradient(#f4f0fe 10%, #d4c6f9 100%);
+    //     // background-clip: text;
+    //     // -webkit-background-clip: text;
+    //     // color: transparent;
+    //     color: #d4c6f9;
+    // }
+}
+
+// img, svg, video, iframe, picture {
+//     display: block;
+//     width: 100%;
+// }
+video {
+    display: block;
+    width: 100%;
+}
+
+.videoclips {
+    // margin-top: -50vh;
+    // position: relative;
+    // height: 2000px;
+    // z-index: 20;
+    padding-top: 10vh;
+}
+
+// .videoclips__themes {
+//     position: absolute;
+//     top: 50%;
+//     right: 25.78125%;
+//     width: 150px;
+//     margin-right: -190px;
+//     margin-top: calc((100vh - 589px) / 4 - 128px + (50vh / 2));
+//     pointer-events: none;
+//     -webkit-transition: opacity 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+//     -moz-transition: opacity 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+//     -o-transition: opacity 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+//     -ms-transition: opacity 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+//     transition: opacity 400ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+// }
+
+// .videoclips__themes:before {
+//     content: ' ';
+//     display: block;
+//     position: absolute;
+//     top: -100px;
+//     right: 15px;
+//     width: 108px;
+//     height: 86px;
+//     margin: auto;
+//     background-repeat: no-repeat;
+//     -webkit-background-size: contain;
+//     -moz-background-size: contain;
+//     background-size: contain;
+//     background-position: center center;
+//     background-image: url(//letstalkgender.jp/../../cms/wp-content/themes/templatename/assets/images/ico_clip.svg)
+// }
+
+// .videoclips__themes--hide {
+//     opacity: 0;
+//     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+//     filter: alpha(opacity=0)
+// }
+
+// .videoclips__theme {
+//     position: absolute;
+//     top: 0;
+//     right: 50%;
+//     writing-mode: vertical-rl;
+//     -webkit-transform: translate3d(50%, 0, 0);
+//     -moz-transform: translate3d(50%, 0, 0);
+//     -o-transform: translate3d(50%, 0, 0);
+//     -ms-transform: translate3d(50%, 0, 0);
+//     transform: translate3d(50%, 0, 0);
+//     font-size: 3rem;
+//     line-height: 1.243243243243243;
+//     white-space: nowrap;
+//     -webkit-transition: opacity 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+//     -moz-transition: opacity 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+//     -o-transition: opacity 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+//     -ms-transition: opacity 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+//     transition: opacity 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+//     opacity: 0;
+//     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+//     filter: alpha(opacity=0);
+// }
+
+// .videoclips__theme--show {
+//     -webkit-transition: opacity 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 160ms;
+//     -moz-transition: opacity 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 160ms;
+//     -o-transition: opacity 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 160ms;
+//     -ms-transition: opacity 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 160ms;
+//     transition: opacity 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 160ms;
+//     opacity: 1;
+//     -ms-filter: none;
+//     filter: none
+// }
+
+.videoclips__item {
+    position: sticky;
+    // padding-top: calc((100vh - 589px) / 2 + 50vh);
+    // padding-top: calc((100vh - 589px) /2 + 5vh);
+    bottom: calc((100vh - 589px) / 2);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    // height: calc(100vh - (100vh - 589px) / 2 + 50vh);
+    height: clamp(300px, 100vh, 589px);
+    // 기본
+    // height: calc(100vh - (100vh - 1100 / 750 * 100vw) / 2 + 30vh);
+    // z-index: 30; 
+}
+
+// @media screen and (min-width: 2561px) {
+//     .videoclips__item {
+//         // padding-top: calc((100vh - 589px) / 2 + 75vh);
+//         height: calc((100vh - 589px) / 2 + 45vh);
+//     }
+// }
+// @media screen and (min-width: 1921px) and (max-width: 2560px) {
+//     .videoclips__item {
+//         // padding-top: calc((100vh - 589px) / 2 + 75vh);
+//         height: calc((100vh - 589px) / 2 + 65vh);
+//     }
+// }
+// @media screen and (max-width: 1920px) { 
+//     .videoclips__item {
+//         // padding-top: calc((100vh - 589px) / 2 + 75vh);
+//         height: calc((100vh - 589px) / 2 + 80vh);
+//     }
+// }
+
+.videoclips__item--1 {
+    z-index: 5;
+}
+
+.videoclips__item--2 {
+    // margin-top: calc((100vh - 589px) / 2 + 5vh);
+    z-index: 4;
+}
+
+// .videoclips__item--3 {
+//     z-index: 3
+// }
+
+// .videoclips__item--4 {
+//     z-index: 2
+// }
+
+// .videoclips__item--5 {
+//     z-index: 1
+// }
+
+.videoclips__item--6 {
+    // margin-top: calc((100vh - 589px) / 2 + 1vh);
+    overflow: hidden; // .bg를 위한 숨기기
+    z-index: 0;
+}
+
+.videoclips__item--6 {
+    background-position: top center;
+    -webkit-background-size: 100px 100px;
+    -moz-background-size: 100px 100px;
+    background-size: 100px 100px;
+    // background-image: url(//letstalkgender.jp/../../cms/wp-content/themes/templatename/assets/images/bg_2.png);
+}
+
+// .videoclips__item.inview--enter .videoclips__pop {
+//     opacity: 1;
+//     -ms-filter: none;
+//     filter: none;
+//     -webkit-transform: translate3d(0, -165%, 0);
+//     -moz-transform: translate3d(0, -165%, 0);
+//     -o-transform: translate3d(0, -165%, 0);
+//     -ms-transform: translate3d(0, -165%, 0);
+//     transform: translate3d(0, -165%, 0)
+// }
+
+.videoclips__thumb {
+    overflow: hidden;
+    position: relative;
+    // width: 331px;
+    width: clamp(200px, 18vw, 331px); // 최소 250px, 최대 331px, 화면 너비의 20%
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.4);
+}
+
+.videoclips__thumb--1,
+.videoclips__thumb--4 {
+    // -webkit-transform: translate3d(0, -40px, 0);
+    // -moz-transform: translate3d(0, -40px, 0);
+    // -o-transform: translate3d(0, -40px, 0);
+    // -ms-transform: translate3d(0, -40px, 0);
+    // transform: translate3d(0, -40px, 0);
+    -webkit-transform: rotate(-10deg) translate3d(0, 20px, 0);
+    -moz-transform: rotate(-10deg) translate3d(0, 20px, 0);
+    -o-transform: rotate(-10deg) translate3d(0, 20px, 0);
+    -ms-transform: rotate(-10deg) translate3d(0, 20px, 0);
+    transform: rotate(-10deg) translate3d(0, 20px, 0);
+}
+
+.videoclips__thumb--2,
+.videoclips__thumb--5 {
+    // -webkit-transform: rotate(10deg);
+    // -moz-transform: rotate(10deg);
+    // -o-transform: rotate(10deg);
+    // -ms-transform: rotate(10deg);
+    // transform: rotate(10deg);
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
+.videoclips__thumb--3,
+.videoclips__thumb--6 {
+    // -webkit-transform: rotate(-10deg) translate3d(0, 40px, 0);
+    // -moz-transform: rotate(-10deg) translate3d(0, 40px, 0);
+    // -o-transform: rotate(-10deg) translate3d(0, 40px, 0);
+    // -ms-transform: rotate(-10deg) translate3d(0, 40px, 0);
+    // transform: rotate(-10deg) translate3d(0, 40px, 0);
+    -webkit-transform: translate3d(0, 0px, 0);
+    -moz-transform: translate3d(0, 0px, 0);
+    -o-transform: translate3d(0, 0px, 0);
+    -ms-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0);
+}
+
+.videoclips__thumbA {
+    position: relative;
+    display: block;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.videoclips__thumbA:hover:before {
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50)
+}
+
+.videoclips__thumbA:hover .videoclips__img {
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08)
+}
+
+.videoclips__thumbA:before {
+    content: ' ';
+    display: block;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #9d9d9e;
+    mix-blend-mode: multiply;
+    -webkit-transition: opacity 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -moz-transition: opacity 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition: opacity 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -ms-transition: opacity 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: opacity 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+
+.videoclips__thumbA:after {
+    // content: ' ';
+    // display: block;
+    // z-index: 2;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+    // bottom: 0;
+    // width: 95px;
+    // height: 135px;
+    // margin: auto;
+    // background-repeat: no-repeat;
+    // -webkit-background-size: contain;
+    // -moz-background-size: contain;
+    // background-size: contain;
+    // background-position: center center;
+    // background-image: url(//letstalkgender.jp/../../cms/wp-content/themes/templatename/assets/images/ico_play.svg)
+
+    content: 'PLAY\A VIDEO'; /* 텍스트 추가 */
+    display: flex; /* 텍스트 중앙 정렬 */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: pre; /* 텍스트 줄바꿈 유지 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // width: 150px; 
+    // height: 150px;
+    width: clamp(80px, 15vw, 150px);
+    height: clamp(80px, 15vw, 150px);
+    // border: 2px solid white;
+    border: clamp(1px, 0.2vw, 2px) solid white;
+    border-radius: 50%; 
+    color: white; 
+    // font-size: 25px;
+    font-size: clamp(14px, 2.5vw, 25px);
+    font-weight: 600;
+    font-family: Arial, sans-serif; 
+    background-color: transparent; 
+    line-height: 1.5; 
+    z-index: 2;
+}
+
+.videoclips__img {
+    -webkit-transition: -webkit-transform 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -moz-transition: -moz-transform 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition: -o-transform 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -ms-transition: -ms-transform 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: transform 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+
+.videoclips__pop {
+    // position: absolute;
+    // top: 50%;
+    // left: 2.96875%;
+    // width: 251px;
+    // margin-top: calc((100vh - 589px) / 4 + (50vh / 2));
+    // -webkit-transition: opacity 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    // -moz-transition: opacity 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94), -moz-transform 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    // -o-transition: opacity 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94), -o-transform 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    // -ms-transition: opacity 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94), -ms-transform 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    // transition: opacity 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    // -webkit-transform: translate3d(0, -85%, 0);
+    // -moz-transform: translate3d(0, -85%, 0);
+    // -o-transform: translate3d(0, -85%, 0);
+    // -ms-transform: translate3d(0, -85%, 0);
+    // transform: translate3d(0, -85%, 0);
+    // opacity: 0;
+    // -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    // filter: alpha(opacity=0)
+
+    // position: relative;
+    // height: 100vh;
+    // overflow-x: hidden;
+    // overflow: visible;
+    // z-index: 20;
+    // background-color: #fff;
+
+    .bg {
+        position: absolute;
+        width: 120%;
+        // width: 100%;
+        height: 100%;
+        // top: 0%;
+        // left: 0%;
+        top: 50%;
+        left: 50%;
+        // transform: translate(-10%, -50%);
+        // transform: translate(-10%, -20%);
+        transform: translate(-50%, -50%) scale(0.9);
+        z-index: -1;
+
+        svg {
+            width: 100%;
+            height: auto;
+
+            text {
+                // font-size: max(2vw, 50px);
+                font-size: clamp(30px, 3vw, 50px);
+                font-weight: 800;
+                text-transform: uppercase;
+                // transition: transform 1s ease-in-out;
+                will-change: transform; // 성능 최적화
+
+                #section21Wave-textpath {
+                    // transition: startOffset 0.3s ease-in-out; 
+                    will-change: startOffset; // 성능 최적화
+
+                    tspan {
+                        will-change: transform; // 성능 최적화
+                    }
+                }
+            }
+        }
+    }
+
+    // @media screen and (min-width: 2561px) {
+    //     .bg {
+    //         width: 100%;
+    //         transform: translate(0%, -5%);
+    //     }
+    // }
+    // @media screen and (min-width: 1921px) and (max-width: 2560px) {
+    //     .bg {
+    //         width: 110%;
+    //         transform: translate(-5%, -10%);
+    //     }
+    // }
+    // @media screen and (max-width: 1920px) { 
+    //     .bg {
+    //         transform: translate(-10%, -3%);
+    //     }
+    // }
+    @media screen and (min-width: 3501px) {
+        .bg {
+            width: 100%;
+            transform: translate(-50%, -67%) scale(1.1);
+        }
+    }
+    @media screen and (min-width: 2901px) and (max-width: 3500px) {
+        .bg {
+            width: 100%;
+            // transform: translate(-50%, -50%) scale(1.1);
+            // transform: translate(-50%, -68%) scale(1.1);
+            transform: translate(-50%, -60%) scale(1.1);
+        }
+    }
+    @media screen and (min-width: 2561px) and (max-width: 2900px) {
+        .bg {
+            width: 100%;
+            // transform: translate(-50%, -50%) scale(1.1);
+            // transform: translate(-50%, -68%) scale(1.1);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+    }
+    @media screen and (min-width: 1921px) and (max-width: 2560px) {
+        .bg {
+            width: 110%;
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+    }
+    @media screen and (max-width: 1920px) { 
+        .bg {
+            width: 120%;
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+    }
+    @media screen and (min-width: 761px) and (max-width: 1280px) {
+        .bg {
+            width: 120%;
+            transform: translate(-50%, -50%) scale(0.9);
+        }
+    }
+}
+
+.videoModal {
+    display: none;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0; // 초기 상태는 투명
+    transition: opacity 0.3s ease; // 페이드 효과
+
+    &.fade-in {
+        opacity: 1;
+    }
+
+    &:before {
+        content: ' ';
+        display: block;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: .4;
+    }
+}
+
+.videoModal:before {
+    content: ' ';
+    display: block;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .4;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40)
+}
+
+.videoModal__close {
+    z-index: 10;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 89px;
+    height: 89px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.videoModal__close:hover:before {
+    -webkit-transform: scaleX(.88);
+    -moz-transform: scaleX(.88);
+    -o-transform: scaleX(.88);
+    -ms-transform: scaleX(.88);
+    transform: scaleX(.88)
+}
+
+.videoModal__close:hover:after {
+    -webkit-transform: scaleY(.88);
+    -moz-transform: scaleY(.88);
+    -o-transform: scaleY(.88);
+    -ms-transform: scaleY(.88);
+    transform: scaleY(.88)
+}
+
+.videoModal__close:before,
+.videoModal__close:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: .8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    -webkit-transition: -webkit-transform 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -moz-transition: -moz-transform 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition: -o-transform 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -ms-transition: -ms-transform 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: transform 240ms cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+
+.videoModal__close:before {
+    width: 100%;
+    height: 0;
+    border-top: 1px solid #fff
+}
+
+.videoModal__close:after {
+    width: 0;
+    height: 100%;
+    border-left: 1px solid #fff
+}
+
+.videoModal__clips {
+    // z-index: 1;
+    // overflow: hidden;
+    // position: relative;
+    // height: 100vh;
+
+    z-index: 1;
+    overflow: hidden;
+    position: fixed; // relative 대신 fixed 사용
+    height: 100vh;
+    width: 100%; // 너비 추가
+    top: 0; // 위치 지정
+    left: 0;
+}
+
+.videoModal__clips:before,
+.videoModal__clips:after {
+    content: ' ';
+    display: block;
+    // position: absolute;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: calc((100vh - 648px) / 2);
+    margin: auto;
+    border-left: 1px solid #fff;
+    opacity: .8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    -webkit-transition: -webkit-transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -moz-transition: -moz-transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition: -o-transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -ms-transition: -ms-transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: transform 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -webkit-transform-origin: top center;
+    -moz-transform-origin: top center;
+    -o-transform-origin: top center;
+    -ms-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transform: scaleY(0);
+    -moz-transform: scaleY(0);
+    -o-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+
+    position: fixed; // absolute 대신 fixed 사용
+    pointer-events: none; // 이벤트 무시
+}
+
+.videoModal__clips:before {
+    top: 0
+}
+
+.videoModal__clips:after {
+    -webkit-transition-delay: 160ms;
+    -moz-transition-delay: 160ms;
+    -o-transition-delay: 160ms;
+    -ms-transition-delay: 160ms;
+    transition-delay: 160ms;
+    bottom: 0
+}
+
+.videoModal__clips--opened:before,
+.videoModal__clips--opened:after {
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1)
+}
+
+.videoModal__clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    pointer-events: none;
+    z-index: 0;
+    -webkit-transition: opacity 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -moz-transition: opacity 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition: opacity 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -ms-transition: opacity 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: opacity 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.videoModal__clip--show {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    pointer-events: auto;
+    z-index: 1;
+    -webkit-transition-delay: 400ms;
+    -moz-transition-delay: 400ms;
+    -o-transition-delay: 400ms;
+    -ms-transition-delay: 400ms;
+    transition-delay: 400ms
+}
+
+.videoModal__video {
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 331px;
+    height: 588px;
+    margin: 0 auto;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+    -o-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    border-radius: 20px
+}
+
+.videoModal__theme {
+    position: absolute;
+    top: 50%;
+    right: 25.78125%;
+    width: 150px;
+    margin-right: -190px;
+    margin-top: -96px;
+    pointer-events: none;
+}
+
+.videoModal__theme:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: -126px;
+    right: 15px;
+    width: 108px;
+    height: 86px;
+    margin: auto;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    background-position: center center;
+    // background-image: url(//letstalkgender.jp/../../cms/wp-content/themes/templatename/assets/images/ico_clip.svg);
+}
+
+.videoModal__themeTxt {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    writing-mode: vertical-rl;
+    -webkit-transform: translate3d(50%, 0, 0);
+    -moz-transform: translate3d(50%, 0, 0);
+    -o-transform: translate3d(50%, 0, 0);
+    -ms-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
+    font-size: 3.7rem;
+    line-height: 1.243243243243243;
+    white-space: nowrap
+}
+
+@media screen and (max-width: 900px) {
+    .videoclips__item--6 .videoclips__pop {
+        display: none;
+    }
+}
+
+// @media screen and (max-width: 736px) {
+@media screen and (max-width: 760px) {
+    // .section {
+    //     padding-top: 2.666666666666667vw;
+    // }
+
+    .section__content--2 {
+        // margin-top: 38.666666666666664vw;
+        // padding-top: 17.6vw;
+        // padding-bottom: 50.666666666666664vw
+        padding-bottom: 17.666666666666664vw;
+
+        .s-top_contents-02-ttl {
+            margin-top: 22px;
+            margin-bottom: 22px;
+    
+            .text {
+                font-size: 2em !important;
+            }
+        }
+    
+        .s-top_contents-02-ttl .en {
+            margin-top: 10px; 
+            margin-bottom: 20px;
+            font-size: 1rem !important;
+        }
+    }
+    .videoclips {
+        // margin-top: -30vh;
+        // padding-top: 5vh;
+        padding-top: clamp(20px, calc(100vh * 0.02), 60px);
+        // padding-top: 0;
+    }
+    // .videoclips__themes {
+    //     position: absolute;
+    //     top: calc((100vh - 1100 / 750 * 100vw) / 2 + 30vh);
+    //     top: calc((100lvh - 1100 / 750 * 100vw) / 2 + 30vh);
+    //     left: 0;
+    //     right: 0;
+    //     width: 86.66666666666667vw;
+    //     margin: 0 auto;
+    // }
+    // .videoclips__themes:before {
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     width: 12.266666666666666vw;
+    //     height: 9.733333333333333vw;
+    //     margin: 0 auto
+    // }
+    // .videoclips__themes--hide {
+    //     opacity: 0;
+    //     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    //     filter: alpha(opacity=0)
+    // }
+    // .videoclips__theme {
+    //     display: block;
+    //     padding-top: 12.8vw;
+    //     font-size: 4.8vw;
+    //     writing-mode: horizontal-tb;
+    //     text-align: center;
+    // }
+    // .videoclips__theme .verticalQuestion {
+    //     -webkit-transform: none;
+    //     -moz-transform: none;
+    //     -o-transform: none;
+    //     -ms-transform: none;
+    //     transform: none
+    // }
+    .videoclips__list {
+        // margin-top: 29.333333333333332vw
+    }
+    .videoclips__item {
+        // padding-top: calc((100vh - 1100 / 750 * 100vw) / 2 + 30vh);
+        // padding-top: calc((100lvh - 1100 / 750 * 100vw) / 2) + 30vh;
+        // bottom: calc((100vh - 1100 / 750 * 100vw) / 2);
+        // bottom: calc((100lvh - 1100 / 750 * 100vw) / 2);
+        // height: calc(100lvh - (100lvh - 900 / 750 * 100vw) / 2 + -18vh);
+        // height: calc(100lvh - (100lvh - 900 / 750 * 100vw) / 2 + -18vh);
+        // height: clamp(300px, 70vh, 589px);
+        // height: clamp(300px, 50vh, 589px);
+        // bottom: calc((100lvh - 589px) / 2);
+
+        bottom: calc((100vh - 146.6666666667vw) / 2);
+        bottom: calc((100lvh - 146.6666666667vw) / 2);
+        height: clamp(300px, 50vh, 589px);
+    }
+
+    .videoclips__item--6 {
+        overflow: visible;
+    }
+
+    .videoclips__item--6 .videoclips__pop {
+        display: none;
+    }
+    // .videoclips__item.inview--enter .videoclips__pop {
+    //     -webkit-transform: translate3d(0, 0%, 0);
+    //     -moz-transform: translate3d(0, 0%, 0);
+    //     -o-transform: translate3d(0, 0%, 0);
+    //     -ms-transform: translate3d(0, 0%, 0);
+    //     transform: translate3d(0, 0%, 0)
+    // }
+    .videoclips__thumb {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        // width: 60.13333333333333vw;
+        // width: 48.13333333333333vw;
+        width: clamp(200px, 48vw, 450px);
+        border-radius: 3.733333333333333vw;
+    }
+    .videoclips__thumb--1,
+    .videoclips__thumb--4 {
+        // -webkit-transform: translate3d(0, -7.466666666666667vw, 0);
+        // -moz-transform: translate3d(0, -7.466666666666667vw, 0);
+        // -o-transform: translate3d(0, -7.466666666666667vw, 0);
+        // -ms-transform: translate3d(0, -7.466666666666667vw, 0);
+        // transform: translate3d(0, -7.466666666666667vw, 0)
+    }
+    .videoclips__thumb--2 {
+        transform: rotate(10deg);
+    }
+    .videoclips__thumb--3,
+    .videoclips__thumb--6 {
+        // -webkit-transform: rotate(-10deg) translate3d(0, 7.466666666666667vw, 0);
+        // -moz-transform: rotate(-10deg) translate3d(0, 7.466666666666667vw, 0);
+        // -o-transform: rotate(-10deg) translate3d(0, 7.466666666666667vw, 0);
+        // -ms-transform: rotate(-10deg) translate3d(0, 7.466666666666667vw, 0);
+        // transform: rotate(-10deg) translate3d(0, 7.466666666666667vw, 0)
+    }
+    .videoclips__thumbA:hover:before {
+        opacity: 1;
+        -ms-filter: none;
+        filter: none
+    }
+    .videoclips__thumbA:hover .videoclips__img {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
+    .videoclips__thumbA:before {
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        -ms-transition: none;
+        transition: none
+    }
+    .videoclips__thumbA:after {
+        // width: 19.466666666666665vw;
+        // height: 26vw;
+        width: clamp(60px, 20vw, 80px); // 모바일에서의 크기 범위
+        height: clamp(60px, 20vw, 80px);
+        font-size: clamp(12px, 3vw, 14px); // 모바일에서의 폰트 크기 범위
+        border-width: 1px;
+    }
+    .videoclips__img {
+        -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        -ms-transition: none;
+        transition: none
+    }
+    // .videoclips__pop {
+    //     top: 0;
+    //     left: 2.666666666666667vw;
+    //     width: 22.53333333333333vw;
+    //     margin-top: calc(22 / 750 * 100vw + 30vh);
+    //     -webkit-transform: translate3d(0, 80%, 0);
+    //     -moz-transform: translate3d(0, 80%, 0);
+    //     -o-transform: translate3d(0, 80%, 0);
+    //     -ms-transform: translate3d(0, 80%, 0);
+    //     transform: translate3d(0, 80%, 0)
+    // }
+    .videoModal__close {
+        top: 2.666666666666667vw;
+        right: 2.666666666666667vw;
+        width: 11.866666666666667vw;
+        height: 11.866666666666667vw;
+    }
+    .videoModal__close:hover:before {
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+    .videoModal__close:hover:after {
+        -webkit-transform: scaleY(1);
+        -moz-transform: scaleY(1);
+        -o-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        transform: scaleY(1)
+    }
+    .videoModal__clips {
+        height: 100dvh;
+    }
+    .videoModal__clips:before,
+    .videoModal__clips:after {
+        display: none
+    }
+    .videoModal__video {
+        top: auto;
+        bottom: calc((100vh - 1040 / 750 * 100vw) / 2);
+        bottom: calc((100dvh - 1040 / 750 * 100vw) / 2);
+        width: 62.13333333333333vw;
+        height: 110.53333333333333vw;
+        border-radius: 2.666666666666667vw;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+    .videoModal__theme {
+        position: absolute;
+        top: calc((100vh - 1040 / 750 * 100vw) / 2);
+        top: calc((100dvh - 1040 / 750 * 100vw) / 2);
+        left: 0;
+        right: 0;
+        width: 86.66666666666667vw;
+        margin: 0 auto;
+    }
+    .videoModal__theme:before {
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 12.266666666666666vw;
+        height: 9.733333333333333vw;
+        margin: 0 auto
+    }
+    .videoModal__themeTxt {
+        display: block;
+        padding-top: 12.8vw;
+        font-size: 4.8vw;
+        writing-mode: horizontal-tb;
+        text-align: center;
+    }
+    .videoModal__themeTxt .verticalQuestion {
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none
+    }
+}
+// @media screen and (max-width: 450px) and (min-height: 771px) and (max-height: 957px) {
+@media screen and (min-width: 401px) and (max-width: 450px) {
+    .section--2 {
+        .section__content--2 {
+            .s-top_contents-02-ttl {
+                margin-bottom: 0px;
+
+                .en {
+                    margin-bottom: 0;
+                }
+            }
+            .videoclips {
+                padding-top: 0vh;
+            }
+        }
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 400px) {
+    .section--2 {
+        .section__content--2 {
+            .s-top_contents-02-ttl {
+                margin-bottom: 0px;
+
+                .en {
+                    margin-bottom: 0;
+                }
+            }
+            .videoclips {
+                padding-top: 3vh;
+            }
+        }
+    }
+}
+// @media only screen and (min-width: 370px) and (max-height: 820px) {
+//     .section--2 {
+//         .section__content--2 {
+        
+//             .videoclips {
+//                 padding-top: 6vh;
+//             }
+//         }
+//     }
+// }
+@media screen and (max-width: 359px) {
+    .videoclips {
+        // margin-top: -30vh;
+        // padding-top: 5vh;
+        // padding-top: clamp(20px, calc(100vh * 0.07), 60px);
+        padding-top: 13vh;
+    }
+}
+
+// @media (max-height: 1280px) { /* 대형 스마트폰, 갤럭시탭 */
+//     .videoclips__item {
+//         bottom: calc((100lvh - 1100 / 750 * 100vw) / 2);
+//         height: clamp(300px, 75vh, 850px);
+//     }
+// }
+// @media (min-height: 569px) and (max-height: 780px) { /* 중간 크기 스마트폰 */
+//     .videoclips__item {
+//         bottom: calc((100lvh - 1100 / 750 * 100vw) / 2);
+//         height: calc(100lvh - (100lvh - 950 / 750 * 100vw) / 2 + 25vh);
+//     }
+// }
+// @media (max-height: 568px) { /* 예: iPhone SE */
+//     .videoclips__item {
+//         // height: calc(100lvh - (100lvh - 900 / 750 * 100vw) / 2 + 20vh);
+//         bottom: calc((100lvh - 1100 / 750 * 100vw) / 2);
+//         height: calc(100lvh - (100lvh - 900 / 750 * 100vw) / 2 + -18vh);
+//     }
+// }

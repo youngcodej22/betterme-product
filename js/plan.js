@@ -1,18 +1,4 @@
 function showPlanInfo(planId) {
-    // // Get all info wraps
-    // const allInfoWraps = document.querySelectorAll(".plan-detail-info-wrap");
-
-    // // Hide all first
-    // allInfoWraps.forEach((wrap) => {
-    //     wrap.classList.remove("active");
-    // });
-
-    // // Show the selected one
-    // const selectedInfo = document.getElementById(planId);
-    // if (selectedInfo) {
-    //     selectedInfo.classList.add("active");
-    // }
-
     // Determine which container is visible
     const isMobile =
         window.getComputedStyle(
@@ -26,7 +12,6 @@ function showPlanInfo(planId) {
     const allInfoWraps = document.querySelectorAll(
         `${activeContainer} .plan-detail-info-wrap`
     );
-    // console.log("🚀 ~ showPlanInfo ~ allInfoWraps:", allInfoWraps);
 
     // Hide all first
     allInfoWraps.forEach((wrap) => {
@@ -44,24 +29,6 @@ function showPlanInfo(planId) {
     // Update button states
     updateButtonStates(planId, activeContainer);
 }
-
-// Add click event listeners
-// document
-//     .querySelector(".btn-online-counseling")
-//     .addEventListener("click", function (e) {
-//         e.preventDefault();
-//         showPlanInfo("online-counseling-info");
-//     });
-
-// document.querySelector(".btn-standard").addEventListener("click", function (e) {
-//     e.preventDefault();
-//     showPlanInfo("standard-info");
-// });
-
-// document.querySelector(".btn-premium").addEventListener("click", function (e) {
-//     e.preventDefault();
-//     showPlanInfo("premium-info");
-// });
 
 function updateButtonStates(planId, activeContainer) {
     // Remove active class from all buttons
@@ -98,7 +65,7 @@ function updateButtonStates(planId, activeContainer) {
 
 // Show online counseling info by default
 document.addEventListener("DOMContentLoaded", function () {
-    showPlanInfo("online-counseling-info");
+    // showPlanInfo("online-counseling-info");
 
     // Add event listeners to all buttons (both mobile and PC)
     const buttons = {
