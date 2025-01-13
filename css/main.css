@@ -7074,25 +7074,28 @@ body.js-notice-visible {
   }
   .section-09 .bg-shape-radius .card-container .card-list .reactive {
     position: absolute;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    will-change: transform;
   }
   .section-09 .bg-shape-radius .card-container .card-list .reactive:nth-child(1) {
     z-index: 6;
-    transform: rotate(-13deg) translate(-59.347826%, -19.4202898551%);
+    transform: translate3d(-59%, -24%, 0) rotate(-13deg);
   }
   .section-09 .bg-shape-radius .card-container .card-list .reactive:nth-child(2) {
     z-index: 7;
-    transform: rotate(12.59deg) translate(-30.304348%, 74.637681%);
+    transform: translate3d(-50%, 77%, 0) rotate(13deg);
   }
   .section-09 .bg-shape-radius .card-container .card-list .reactive:nth-child(3) {
     z-index: 9;
   }
   .section-09 .bg-shape-radius .card-container .card-list .reactive:nth-child(4) {
     z-index: 10;
-    transform: rotate(-12.7deg) translate(25.333333%, 77.371014%);
+    transform: translate3d(50%, 77%, 0) rotate(-13deg);
   }
   .section-09 .bg-shape-radius .card-container .card-list .reactive:nth-child(5) {
     z-index: 8;
-    transform: rotate(15.8deg) translate(61.826087%, -17.831884%);
+    transform: translate3d(59%, -24%, 0) rotate(13deg);
   }
   .section-09 .bg-shape-radius .card-container .card-list .reactive .contents span {
     font-size: 0.5em;
