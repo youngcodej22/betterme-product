@@ -272,7 +272,6 @@ $(() => {
         (entries) => {
             // Check if screen width is greater than 760px
             const mediaQuery = window.matchMedia('(min-width: 760px)');
-            // const mediaQuery = window.matchMedia('(min-width: 100px)');
             
             const handleIntersection = (entries) => {
                 for (const entry of entries) {
@@ -288,7 +287,10 @@ $(() => {
             handleIntersection(entries);
 
             // Add listener for screen size changes
-            mediaQuery.addListener(() => handleIntersection(entries));
+            // mediaQuery.addListener(() => handleIntersection(entries));
+            mediaQuery.addEventListener("change", () =>
+                handleIntersection(entries)
+            );
         },
         {
             threshold: 0.5,

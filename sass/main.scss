@@ -6361,7 +6361,8 @@ body {
         // right: -30px;
         // bottom: auto;
         width: clamp(50px, 30vw, 390px);
-        bottom: 60%;
+        // bottom: 60%;
+        bottom: 65%;
         right: 2vw;
         z-index: -1;
         opacity: 0.4;
@@ -6487,7 +6488,8 @@ body {
         // transform: translate(50%, -50%);
         // right: 25vw;
         // top: 14vh;
-        bottom: 79%;
+        // bottom: 79%;
+        bottom: 84%;
         right: 30vw;
         z-index: -1;
         opacity: 0.4;
@@ -9354,10 +9356,10 @@ body {
                             }
 
                             .plan-label {
-                                font-size: 0.75em;
+                                font-size: 11px;
 
                                 .label {
-                                    padding: 0.4rem 0.7rem;
+                                    padding: 0.2rem 0.4rem;
                                 }
                                 
                                 .plus-icon {
@@ -13421,7 +13423,7 @@ body {
             padding-top: 0;
             margin: 0;
     
-            .reactive {
+            li.reactive {
                 position: relative;
                 bottom: 0;
     
@@ -13487,6 +13489,7 @@ body {
                                 position: static;
                                 bottom: 0;
                                 width: 100%;
+                                max-width: 70px;
                             }
                         }
                     }
@@ -13556,6 +13559,13 @@ body {
                         }
                     }
 
+                    .center.center-bg-1 {
+                        .step-icon-container {
+                            img {
+                                max-width: 70px;
+                            }
+                        }
+                    }
                     .center.center-bg-2 {
                         flex-direction: column;
                         padding: 4em 2em 2em 2em;
@@ -13664,6 +13674,13 @@ body {
                         //         }
                         //     }
                         // }
+                    }
+                    .center.center-bg-3 {
+                        .step-icon-container {
+                            img {
+                                max-width: 70px;
+                            }
+                        }
                     }
 
                     // .center.step3-square {
