@@ -10860,9 +10860,11 @@ body {
 }
 @media only screen and (max-width: 760px) {
     .section-10 {
+        background-attachment: scroll;
         background-size: 300% auto;
         
         .bg {
+            background-attachment: scroll;
             height: 120svh;
         }
 
