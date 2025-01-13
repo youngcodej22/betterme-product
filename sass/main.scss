@@ -10838,7 +10838,12 @@ body {
 // @media screen and (min-width: 761px) and (max-width: 1900px) {
 @media screen and (min-width: 761px) and (max-width: 1279px) {
     .section-10 {
+        background-attachment: scroll;
         background-size: 100% auto;
+
+        .bg {
+            background-attachment: scroll;
+        }
 
         .sticky-content {
             .contents-container {
@@ -10860,7 +10865,7 @@ body {
 }
 @media only screen and (max-width: 760px) {
     .section-10 {
-        // background-attachment: scroll;
+        background-attachment: scroll;
         background-size: 300% auto;
         
         .bg {
